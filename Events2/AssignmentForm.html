@@ -1,0 +1,22 @@
+<html>
+
+<head></head>
+
+<body>
+    <form>
+        First Name::<input type="text" id="abc" onfocus="change_Color()" />
+        <br> <br>
+        User Name: <input type="text" id="xyz" onblur="change_Case()" />
+    </form>
+</body>
+<script>
+    function change_Color() {
+        document.getElementById('abc').style.backgroundColor = "red"
+    }
+    function change_Case() {
+        let name = document.getElementById('xyz').value;
+        document.getElementById('xyz').value = name.toUpperCase()
+    }
+</script>
+
+</html>
